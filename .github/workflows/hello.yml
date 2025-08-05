@@ -1,0 +1,13 @@
+on:
+  pull_request:
+    branches:
+    - main
+
+jobs:
+  test:
+    runs-on: ubuntu-22.04
+    name: hello world
+    steps:
+      - name: echo
+        run: |
+          echo "hello world"
